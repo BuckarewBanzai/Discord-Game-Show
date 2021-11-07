@@ -3,7 +3,7 @@ A bot to handle an elimination round style game show in Discord!
 
 
 
---> Game Flow <<--
+## Game Flow 
 
 -> Virtual lobby (bot post in channel, opt in to game via emoji to message)
 -> After player threshold reached, game timer starts (2 minutes?)
@@ -19,7 +19,7 @@ A bot to handle an elimination round style game show in Discord!
 ->Game restart (back to virtual lobby)
 
 
-                    --> Spontaneous Events <--
+## Spontaneous Events 
 
 -> These happen between rounds at random and can be good or bad
 -> ex. player randomly explodes, gets revive perk, gun perk, etc
@@ -27,7 +27,7 @@ A bot to handle an elimination round style game show in Discord!
 -> Randomly selected by chance. The event type can be chosen from a pool with each event having a weight to control frequency.
 
 
-                    --> Player Object <<--
+## Player Object
 -> 2 types
 -> Game Player Object (Follows player throughout the game)
 -> Inventory? (power ups, perks, curses)
@@ -35,14 +35,14 @@ A bot to handle an elimination round style game show in Discord!
 -> Keep track of player data unique to that round 
 
 
-                    --> Round Structure <--
+## Round Structure
 -> Round Attributes
 -> Round ID (this will let us randomly choose a round type from a pool)
 -> Round difficulty (lets us classify round types into pools, rounds get harder as game progresses)
 -> Any other round specific data
 
 
-                    --> Game State <--
+## Game State
 -> In Game?
 -> Is Round or Event?
 -> living players
